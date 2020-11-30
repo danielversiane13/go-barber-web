@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ContextProvider from './context'
+import HooksProvider from './hooks'
 import SignIn from './pages/SignIn'
 // import SignUp from './pages/SignUp'
 
@@ -8,9 +8,9 @@ import GlobalStyle from './styles/global'
 
 const App: React.FC = () => (
   <>
-    <ContextProvider>
+    <HooksProvider>
       <SignIn />
-    </ContextProvider>
+    </HooksProvider>
 
     <GlobalStyle />
   </>
